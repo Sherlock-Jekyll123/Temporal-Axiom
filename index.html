@@ -81,6 +81,10 @@
                         linear-gradient(45deg, transparent 35%, #0a0a0a 35%);
             background-size: 30px 30px;
         }
+        
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 <body class="min-h-screen">
@@ -95,7 +99,7 @@
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#services" class="nav-link text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Services</a>
+                        <a href="#services" class="nav-link text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Automation Services</a>
                         <a href="#how-it-works" class="nav-link text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Process</a>
                         <a href="#samples" class="nav-link text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Samples</a>
                         <a href="#contact" class="nav-link text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Contact</a>
@@ -119,7 +123,7 @@
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <h1 class="title-font text-4xl tracking-tight font-extrabold text-white sm:text-5xl lg:text-6xl">
-                    <span class="block">Automation at</span>
+                    <span class="block">Automation at a</span>
                     <span class="block text-transparent bg-clip-text bg-gradient-to-r from-gray-300 to-gray-500">Temporal Scale</span>
                 </h1>
                 <p class="mt-6 max-w-lg mx-auto text-lg text-gray-300 sm:max-w-3xl">
@@ -139,132 +143,346 @@
     <!-- Wave Divider -->
     <div class="wave-divider"></div>
 
-    <!-- Services Section -->
-    <div id="services" class="py-16 bg-black">
+    <!-- Automation Services Section -->
+    <div id="services" class="py-16 bg-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <h2 class="title-font text-3xl tracking-tight font-bold text-white sm:text-4xl">
-                    Our Automation Services
+                    Our Automation Categories
                 </h2>
                 <p class="mt-4 max-w-2xl text-xl text-gray-300 mx-auto">
-                    Specialized solutions for your data collection and distribution needs
+                    Specialized automation solutions for your business needs
                 </p>
             </div>
 
             <div class="mt-16">
-                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                    <!-- Job Collection Service -->
-                    <div class="gloss-card pt-8 pb-10 px-6 rounded-lg transition duration-300">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-900 text-white">
-                            <i class="fas fa-database text-xl"></i>
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                    <!-- Keyword Based Job Search -->
+                    <a href="#job-search-details" class="gloss-card pt-8 pb-10 px-6 rounded-lg transition duration-300 hover:scale-105">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-800 text-white">
+                            <i class="fas fa-search"></i>
                         </div>
                         <div class="mt-6">
-                            <h3 class="title-font text-lg font-medium text-white">Job Collection Engine</h3>
+                            <h3 class="title-font text-lg font-medium text-white">Keyword-Based Job Search</h3>
                             <p class="mt-2 text-base text-gray-300">
-                                We scrape and aggregate job listings from across the web based on your specified keywords, delivering clean, formatted Excel files directly to your inbox.
+                                Automated collection and organization of job listings based on your specified keywords, locations, and other criteria.
                             </p>
                         </div>
                         <div class="mt-6">
                             <div class="syntax-highlight px-4 py-3 rounded">
                                 <p class="text-sm text-gray-400">
-                                    <span class="text-gray-300">Keyword:</span> "remote python developer"<br>
-                                    <span class="text-gray-300">Frequency:</span> Daily/Weekly<br>
-                                    <span class="text-gray-300">Output:</span> Structured Excel file
+                                    <span class="text-gray-300">Includes:</span> Job Collection Engine<br>
+                                    <span class="text-gray-300">Output:</span> Structured Excel<br>
+                                    <span class="text-gray-300">Click for details</span>
                                 </p>
                             </div>
+                        </div>
+                    </a>
+
+                    <!-- Automated Data Entry -->
+                    <a href="#data-entry-details" class="gloss-card pt-8 pb-10 px-6 rounded-lg transition duration-300 hover:scale-105">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-800 text-white">
+                            <i class="fas fa-keyboard"></i>
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="title-font text-lg font-medium text-white">Automated Data Entry</h3>
+                            <p class="mt-2 text-base text-gray-300">
+                                Precision data collection and entry into your preferred formats, eliminating manual work and human errors.
+                            </p>
+                        </div>
+                        <div class="mt-6">
+                            <div class="syntax-highlight px-4 py-3 rounded">
+                                <p class="text-sm text-gray-400">
+                                    <span class="text-gray-300">Accuracy:</span> 99.9% error-free<br>
+                                    <span class="text-gray-300">Speed:</span> 50x manual entry<br>
+                                    <span class="text-gray-300">Click for details</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Message Broadcasting -->
+                    <a href="#broadcasting-details" class="gloss-card pt-8 pb-10 px-6 rounded-lg transition duration-300 hover:scale-105">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-800 text-white">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="title-font text-lg font-medium text-white">Message Broadcasting</h3>
+                            <p class="mt-2 text-base text-gray-300">
+                                Reach 1000+ contacts in minutes, not hours. Your competitors are already automating - don't get left behind!
+                            </p>
+                        </div>
+                        <div class="mt-6">
+                            <div class="syntax-highlight px-4 py-3 rounded">
+                                <p class="text-sm text-gray-400">
+                                    <span class="text-gray-300">Speed:</span> 10x faster<br>
+                                    <span class="text-gray-300">Platforms:</span> WhatsApp, Telegram, Email<br>
+                                    <span class="text-gray-300">Click for details</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Compliance Automation -->
+                    <a href="#compliance-automation-details" class="gloss-card pt-8 pb-10 px-6 rounded-lg transition duration-300 hover:scale-105">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-800 text-white">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="title-font text-lg font-medium text-white">Compliance Automation</h3>
+                            <p class="mt-2 text-base text-gray-300">
+                                Automate TDS/TCS, GST filings, and Indian regulatory compliance. Stay compliant without the manual headache.
+                            </p>
+                        </div>
+                        <div class="mt-6">
+                            <div class="syntax-highlight px-4 py-3 rounded">
+                                <p class="text-sm text-gray-400">
+                                    <span class="text-gray-300">Covers:</span> TDS, TCS, GST, PF, ESI<br>
+                                    <span class="text-gray-300">Jurisdiction:</span> Indian Laws<br>
+                                    <span class="text-gray-300">Click for details</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Custom Automation -->
+                    <a href="#custom-automation-details" class="gloss-card pt-8 pb-10 px-6 rounded-lg transition duration-300 hover:scale-105">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-800 text-white">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="title-font text-lg font-medium text-white">Custom Automation</h3>
+                            <p class="mt-2 text-base text-gray-300">
+                                Can't find what you need? We'll build it. Limited custom slots available - book yours before they're gone!
+                            </p>
+                        </div>
+                        <div class="mt-6">
+                            <div class="syntax-highlight px-4 py-3 rounded">
+                                <p class="text-sm text-gray-400">
+                                    <span class="text-gray-300">Availability:</span> 3 slots left<br>
+                                    <span class="text-gray-300">Delivery:</span> 7-10 days<br>
+                                    <span class="text-gray-300">Click for details</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Automation Details Sections -->
+            <div id="job-search-details" class="mt-20 gloss-card p-8 rounded-lg hidden">
+                <div class="text-center">
+                    <h3 class="title-font text-2xl font-bold text-white">Keyword-Based Job Search Details</h3>
+                    <p class="mt-2 text-gray-300">Complete automation solution for job collection and distribution</p>
+                </div>
+
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="title-font text-lg font-medium text-white">Job Collection Engine</h4>
+                        <p class="mt-2 text-gray-300">
+                            We scrape and aggregate job listings from across the web based on your specified keywords, delivering clean, formatted Excel files directly to your inbox.
+                        </p>
+                        <div class="mt-4 syntax-highlight px-4 py-3 rounded">
+                            <p class="text-sm text-gray-400">
+                                <span class="text-gray-300">Keyword:</span> "remote python developer"<br>
+                                <span class="text-gray-300">Frequency:</span> Daily/Weekly<br>
+                                <span class="text-gray-300">Output:</span> Structured Excel file
+                            </p>
                         </div>
                     </div>
 
-                    <!-- WhatsApp Automation -->
-                    <div class="gloss-card pt-8 pb-10 px-6 rounded-lg transition duration-300">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-900 text-white">
-                            <i class="fab fa-whatsapp text-xl"></i>
-                        </div>
-                        <div class="mt-6">
-                            <h3 class="title-font text-lg font-medium text-white">WhatsApp Multi-Group Posting</h3>
-                            <p class="mt-2 text-base text-gray-300">
-                                Automated posting to multiple WhatsApp groups from an Excel file. Schedule messages, manage responses, and track engagement - all automated.
+                    <div>
+                        <h4 class="title-font text-lg font-medium text-white">Broadcasting Options</h4>
+                        <p class="mt-2 text-gray-300">
+                            Automatically distribute collected jobs to WhatsApp groups, Telegram channels, or email lists based on your preferences.
+                        </p>
+                        <div class="mt-4 syntax-highlight px-4 py-3 rounded">
+                            <p class="text-sm text-gray-400">
+                                <span class="text-gray-300">Platforms:</span> WhatsApp, Telegram, Email<br>
+                                <span class="text-gray-300">Groups:</span> Unlimited destinations<br>
+                                <span class="text-gray-300">Timing:</span> Scheduled posting
                             </p>
-                        </div>
-                        <div class="mt-6">
-                            <div class="syntax-highlight px-4 py-3 rounded">
-                                <p class="text-sm text-gray-400">
-                                    <span class="text-gray-300">Input:</span> Excel with messages<br>
-                                    <span class="text-gray-300">Groups:</span> Unlimited groups<br>
-                                    <span class="text-gray-300">Timing:</span> Scheduled posting
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Telegram Automation -->
-                    <div class="gloss-card pt-8 pb-10 px-6 rounded-lg transition duration-300">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-900 text-white">
-                            <i class="fab fa-telegram text-xl"></i>
-                        </div>
-                        <div class="mt-6">
-                            <h3 class="title-font text-lg font-medium text-white">Telegram Channel Management</h3>
-                            <p class="mt-2 text-base text-gray-300">
-                                Automated posting to multiple Telegram channels/groups from Excel. Manage content distribution at scale with precision timing and formatting.
-                            </p>
-                        </div>
-                        <div class="mt-6">
-                            <div class="syntax-highlight px-4 py-3 rounded">
-                                <p class="text-sm text-gray-400">
-                                    <span class="text-gray-300">Content:</span> Text, images, links<br>
-                                    <span class="text-gray-300">Channels:</span> Multiple simultaneously<br>
-                                    <span class="text-gray-300">Analytics:</span> Engagement tracking
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- How It Works Section -->
-    <div id="how-it-works" class="py-16 bg-gray-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h2 class="title-font text-3xl tracking-tight font-bold text-white sm:text-4xl">
-                    Our Automated Process
-                </h2>
-                <p class="mt-4 max-w-2xl text-xl text-gray-300 mx-auto">
-                    Precision-engineered workflows that operate with clockwork efficiency
-                </p>
+            <!-- Data Entry Details Section -->
+            <div id="data-entry-details" class="mt-20 gloss-card p-8 rounded-lg hidden">
+                <div class="text-center">
+                    <h3 class="title-font text-2xl font-bold text-white">Automated Data Entry Details</h3>
+                    <p class="mt-2 text-gray-300">Flawless data transfer between any formats</p>
+                </div>
+
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="title-font text-lg font-medium text-white">Format Conversion</h4>
+                        <p class="mt-2 text-gray-300">
+                            We automate data transfer between PDFs, websites, Excel, and any other formats with perfect accuracy.
+                        </p>
+                        <div class="mt-4 syntax-highlight px-4 py-3 rounded">
+                            <p class="text-sm text-gray-400">
+                                <span class="text-gray-300">Input:</span> PDF, Web, CSV<br>
+                                <span class="text-gray-300">Output:</span> Excel, Database<br>
+                                <span class="text-gray-300">Speed:</span> 1000 records/minute
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="title-font text-lg font-medium text-white">Validation & Cleaning</h4>
+                        <p class="mt-2 text-gray-300">
+                            Automated validation rules ensure your data is clean and consistent before entering your systems.
+                        </p>
+                        <div class="mt-4 syntax-highlight px-4 py-3 rounded">
+                            <p class="text-sm text-gray-400">
+                                <span class="text-gray-300">Checks:</span> Duplicates, Formats<br>
+                                <span class="text-gray-300">Corrections:</span> Auto-fix rules<br>
+                                <span class="text-gray-300">Accuracy:</span> 99.9% clean
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="mt-16">
-                <div class="lg:grid lg:grid-cols-3 lg:gap-8">
-                    <div class="relative">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-800 text-white">
-                            <span class="text-xl">1</span>
-                        </div>
-                        <h3 class="title-font mt-6 text-lg font-medium text-white">Define Parameters</h3>
-                        <p class="mt-2 text-base text-gray-300">
-                            You provide the keywords, sources, and scheduling requirements. We configure the automation to your exact specifications.
+            <!-- Broadcasting Details Section -->
+            <div id="broadcasting-details" class="mt-20 gloss-card p-8 rounded-lg hidden">
+                <div class="text-center">
+                    <h3 class="title-font text-2xl font-bold text-white">Message Broadcasting Details</h3>
+                    <p class="mt-2 text-gray-300">Mass communication without the manual work</p>
+                </div>
+
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="title-font text-lg font-medium text-white">Multi-Platform Support</h4>
+                        <p class="mt-2 text-gray-300">
+                            Send messages to WhatsApp groups, Telegram channels, and email lists simultaneously from one interface.
                         </p>
+                        <div class="mt-4 syntax-highlight px-4 py-3 rounded">
+                            <p class="text-sm text-gray-400">
+                                <span class="text-gray-300">Platforms:</span> WhatsApp, Telegram, Email<br>
+                                <span class="text-gray-300">Groups:</span> Unlimited destinations<br>
+                                <span class="text-gray-300">Speed:</span> 1000 messages/minute
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="mt-10 lg:mt-0 relative">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-800 text-white">
-                            <span class="text-xl">2</span>
-                        </div>
-                        <h3 class="title-font mt-6 text-lg font-medium text-white">Automation Execution</h3>
-                        <p class="mt-2 text-base text-gray-300">
-                            Our systems silently work in the background, collecting data or distributing your content exactly as programmed.
+                    <div>
+                        <h4 class="title-font text-lg font-medium text-white">Personalization</h4>
+                        <p class="mt-2 text-gray-300">
+                            Add personal touches with merge tags to make each message feel individually crafted.
                         </p>
+                        <div class="mt-4 syntax-highlight px-4 py-3 rounded">
+                            <p class="text-sm text-gray-400">
+                                <span class="text-gray-300">Variables:</span> Name, Date, Custom<br>
+                                <span class="text-gray-300">Media:</span> Images, Documents<br>
+                                <span class="text-gray-300">Scheduling:</span> Timezone-aware
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compliance Automation Details Section -->
+            <div id="compliance-automation-details" class="mt-20 gloss-card p-8 rounded-lg hidden">
+                <div class="text-center">
+                    <h3 class="title-font text-2xl font-bold text-white">Compliance Automation Details</h3>
+                    <p class="mt-2 text-gray-300">Indian regulatory compliance made effortless</p>
+                </div>
+
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="title-font text-lg font-medium text-white">TDS & TCS Automation</h4>
+                        <p class="mt-2 text-gray-300">
+                            Automate Tax Deducted at Source (TDS) and Tax Collected at Source (TCS) calculations, deductions, and quarterly return filings (Form 24Q, 26Q, 27Q).
+                        </p>
+                        <div class="mt-4 syntax-highlight px-4 py-3 rounded">
+                            <p class="text-sm text-gray-400">
+                                <span class="text-gray-300">Forms:</span> 24Q, 26Q, 27Q, 27EQ<br>
+                                <span class="text-gray-300">Features:</span> Auto-calculation, Challan generation<br>
+                                <span class="text-gray-300">Integration:</span> TRACES, NSDL
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="mt-10 lg:mt-0 relative">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-800 text-white">
-                            <span class="text-xl">3</span>
-                        </div>
-                        <h3 class="title-font mt-6 text-lg font-medium text-white">Deliver Results</h3>
-                        <p class="mt-2 text-base text-gray-300">
-                            You receive perfectly formatted Excel files or confirmation of distributed content, on schedule, every time.
+                    <div>
+                        <h4 class="title-font text-lg font-medium text-white">GST Automation</h4>
+                        <p class="mt-2 text-gray-300">
+                            End-to-end GST compliance including GSTR-1, GSTR-3B auto-filing, invoice reconciliation, and input tax credit optimization.
                         </p>
+                        <div class="mt-4 syntax-highlight px-4 py-3 rounded">
+                            <p class="text-sm text-gray-400">
+                                <span class="text-gray-300">Returns:</span> GSTR-1, 3B, 9, 9C<br>
+                                <span class="text-gray-300">Features:</span> E-invoice, E-way bill<br>
+                                <span class="text-gray-300">Integration:</span> GST Portal, IRP
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="title-font text-lg font-medium text-white">PF & ESI Compliance</h4>
+                        <p class="mt-2 text-gray-300">
+                            Automate Provident Fund (PF) and Employee State Insurance (ESI) contributions, monthly returns, and employee registration management.
+                        </p>
+                        <div class="mt-4 syntax-highlight px-4 py-3 rounded">
+                            <p class="text-sm text-gray-400">
+                                <span class="text-gray-300">PF:</span> ECR filing, UAN management<br>
+                                <span class="text-gray-300">ESI:</span> IP registration, Contribution filing<br>
+                                <span class="text-gray-300">Integration:</span> EPFO, ESIC portals
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="title-font text-lg font-medium text-white">Additional Indian Law Compliance</h4>
+                        <p class="mt-2 text-gray-300">
+                            Comprehensive coverage of ROC filings, professional tax, labor law returns, and other statutory requirements under Indian regulations.
+                        </p>
+                        <div class="mt-4 syntax-highlight px-4 py-3 rounded">
+                            <p class="text-sm text-gray-400">
+                                <span class="text-gray-300">ROC:</span> AOC-4, MGT-7, DIR-3 KYC<br>
+                                <span class="text-gray-300">Labor Laws:</span> Shops & Establishment, PT<br>
+                                <span class="text-gray-300">Updates:</span> Auto-compliance with law changes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Automation Details Section -->
+            <div id="custom-automation-details" class="mt-20 gloss-card p-8 rounded-lg hidden">
+                <div class="text-center">
+                    <h3 class="title-font text-2xl font-bold text-white">Custom Automation Details</h3>
+                    <p class="mt-2 text-gray-300">Tailored solutions for unique workflows</p>
+                </div>
+
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="title-font text-lg font-medium text-white">Process Analysis</h4>
+                        <p class="mt-2 text-gray-300">
+                            We analyze your manual workflows to identify the best automation opportunities.
+                        </p>
+                        <div class="mt-4 syntax-highlight px-4 py-3 rounded">
+                            <p class="text-sm text-gray-400">
+                                <span class="text-gray-300">Consultation:</span> Free 1-hour<br>
+                                <span class="text-gray-300">ROI Analysis:</span> Included<br>
+                                <span class="text-gray-300">Time Savings:</span> 80-95%
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="title-font text-lg font-medium text-white">Development & Support</h4>
+                        <p class="mt-2 text-gray-300">
+                            Custom-built automation with full documentation and ongoing support.
+                        </p>
+                        <div class="mt-4 syntax-highlight px-4 py-3 rounded">
+                            <p class="text-sm text-gray-400">
+                                <span class="text-gray-300">Delivery:</span> 7-10 days<br>
+                                <span class="text-gray-300">Revisions:</span> 2 rounds included<br>
+                                <span class="text-gray-300">Support:</span> 30 days post-delivery
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -394,45 +612,25 @@
             </div>
 
             <div class="mt-12">
-                <div class="gloss-card py-10 px-6 sm:px-10 rounded-lg">
-                    <form class="space-y-8">
-                        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
-                            <div>
-                                <label for="name" class="block text-sm font-medium text-gray-300">Name</label>
-                                <div class="mt-1">
-                                    <input type="text" name="name" id="name" autocomplete="name" class="py-3 px-4 block w-full bg-gray-800 border-gray-700 rounded-md text-white focus:ring-gray-500 focus:border-gray-500">
-                                </div>
-                            </div>
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
-                                <div class="mt-1">
-                                    <input type="email" name="email" id="email" autocomplete="email" class="py-3 px-4 block w-full bg-gray-800 border-gray-700 rounded-md text-white focus:ring-gray-500 focus:border-gray-500">
-                                </div>
-                            </div>
+                <div class="gloss-card py-10 px-6 sm:px-10 rounded-lg text-center">
+                    <div class="flex flex-col items-center justify-center space-y-6">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-gray-800 text-white">
+                            <i class="fas fa-envelope text-2xl"></i>
                         </div>
                         <div>
-                            <label for="service" class="block text-sm font-medium text-gray-300">Service Interest</label>
-                            <div class="mt-1">
-                                <select id="service" name="service" class="py-3 px-4 block w-full bg-gray-800 border-gray-700 rounded-md text-white focus:ring-gray-500 focus:border-gray-500">
-                                    <option>Job Collection Automation</option>
-                                    <option>WhatsApp Multi-Group Posting</option>
-                                    <option>Telegram Channel Management</option>
-                                    <option>Custom Automation Solution</option>
-                                </select>
-                            </div>
+                            <h3 class="title-font text-xl font-medium text-white mb-2">Get in Touch</h3>
+                            <p class="text-gray-300 mb-4">Ready to automate your workflow? Reach out to us directly.</p>
+                            <a href="mailto:founder@temporal-axiom.com" class="text-xl font-medium text-white hover:text-gray-300 transition-colors duration-300">
+                                founder@temporal-axiom.com
+                            </a>
                         </div>
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-300">Project Details</label>
-                            <div class="mt-1">
-                                <textarea id="message" name="message" rows="4" class="py-3 px-4 block w-full bg-gray-800 border-gray-700 rounded-md text-white focus:ring-gray-500 focus:border-gray-500"></textarea>
-                            </div>
+                        <div class="flex space-x-4 mt-4">
+                            <a href="mailto:founder@temporal-axiom.com" class="btn-gloss px-6 py-3 border border-transparent text-base font-medium rounded-md text-white inline-flex items-center">
+                                <i class="fas fa-paper-plane mr-2"></i>
+                                Send Email
+                            </a>
                         </div>
-                        <div class="flex justify-end">
-                            <button type="submit" class="btn-gloss px-6 py-3 border border-transparent text-base font-medium rounded-md text-white md:py-4 md:text-lg md:px-8">
-                                Submit Request
-                            </button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -523,6 +721,25 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        // Toggle details visibility for all automation cards
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            if (anchor.getAttribute('href').includes('-details')) {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const detailsSection = document.getElementById(this.getAttribute('href').substring(1));
+                    if (detailsSection) {
+                        detailsSection.classList.toggle('hidden');
+                        
+                        if (!detailsSection.classList.contains('hidden')) {
+                            detailsSection.scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            }
         });
         
         // Mobile menu toggle would go here
